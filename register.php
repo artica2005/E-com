@@ -1,8 +1,4 @@
-<?php 
-
-    session_start();
-
-?>
+<?php include 'include/session.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +16,7 @@
 <body>
 
     <!-- Navbar section -->
-    <?php include('nav.php'); ?>
+    <?php include 'include/nav.php'; ?>
     <!-- Navbar section -->
 
     <main class="form-signin text-center">
@@ -44,11 +40,11 @@
                 </div>   
             <?php } ?>
             <div class="form-floating">
-                <input type="text" class="form-control" name="firstname" placeholder="Enter your firstname">
+                <input type="text" class="form-control" name="firstName" placeholder="Enter your firstname">
                 <label for="floatingInput">Firstname</label>
             </div>
             <div class="form-floating">
-                <input type="text" class="form-control" name="lastname" placeholder="Enter your lastname">
+                <input type="text" class="form-control" name="lastName" placeholder="Enter your lastname">
                 <label for="floatingInput">Lastname</label>
             </div>
             <div class="form-floating">
@@ -62,7 +58,7 @@
 
             <div class="checkbox mb-3">
                 <label>
-                    <input type="checkbox"  onclick="showPass()"> Show password
+                    <input type="checkbox" onclick="showPass()"> Show password
                 </label>
             </div>
             <button class="w-100 btn btn-lg btn-primary" name="register" type="submit">Sign Up</button>

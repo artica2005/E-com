@@ -60,7 +60,7 @@ if (!$firstname) {
 
         // // Prepare and execute the SQL query
         try {
-            $stmt = $pdo->prepare("INSERT INTO users (firstname, lastname, email, password) VALUES (?, ?, ?, ?)");
+            $stmt = $pdo->prepare("INSERT INTO users (firstName, lastname, email, passwordHash) VALUES (?, ?, ?, ?)");
             $stmt->execute([$firstname, $lastname, $email, $hashedPassword]);
 
             echo json_encode(array("status" => "success", "msg" => "Registration successfully!"));
