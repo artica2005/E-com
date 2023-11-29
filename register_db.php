@@ -1,7 +1,7 @@
 <?php
-session_start();
+include 'include/session.php';
 // Include the database connection code
-require 'config.php';
+include 'include/config.php';
 $minLength = 8;
 
 // Retrieve and validate user input

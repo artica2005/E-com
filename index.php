@@ -1,7 +1,9 @@
-<?php 
+<?php
 
-include 'include/session.php'; 
-include 'include/head.php'; 
+include 'include/session.php';
+// head section
+include 'include/head.php';
+
 ?>
 
 <body>
@@ -10,9 +12,8 @@ include 'include/head.php';
     <?php include 'include/nav.php'; ?>
     <!-- Navbar section -->
 
-
     <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="" width="72" height="57">
+        <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="" width="150">
         <h1 class="display-5 fw-bold">Home Page</h1>
         <div class="col-lg-6 mx-auto">
             <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
@@ -23,8 +24,14 @@ include 'include/head.php';
         </div>
     </div>
 
+    <?php
+    // script section
+    include 'include/script.php';
+    // footor section
+    include 'include/footor.php';
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    ?>
+
 </body>
 
 </html>
