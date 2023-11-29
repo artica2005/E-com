@@ -76,7 +76,8 @@ include 'include/head.php';
             </form>
         </main>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <?php
     // script section
     include 'include/script.php';
@@ -98,11 +99,11 @@ include 'include/head.php';
         $(document).ready(function() {
             $("#registerForm").submit(function(e) {
                 e.preventDefault();
-
+                
                 let formUrl = $(this).attr("action");
                 let reqMethod = $(this).attr("method");
                 let formData = $(this).serialize();
-
+              
                 $.ajax({
                     url: formUrl,
                     type: reqMethod,
